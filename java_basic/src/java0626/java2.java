@@ -21,19 +21,19 @@ public class java2 {
 		 	두 명의 직원에 대해 출력하세요.
 		 
 		 */
-		Scanner sc = new Scanner(System.in);
+		Scanner sca = new Scanner(System.in);
 		
 		String name, dept;
 		int money;
 		float tax = 0.08f;
 		
 		System.out.print("이름 : ");
-		name = sc.nextLine();
+		name = sca.nextLine();
 		System.out.print("부서 : ");
-		dept = sc.nextLine();
+		dept = sca.nextLine();
 		
 		System.out.print("월 급여 : ");
-		money = sc.nextInt();
+		money = sca.nextInt();
 		
 		float salary = (int)(money - (money*tax));
 		
