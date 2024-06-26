@@ -21,17 +21,23 @@ public class java2 {
 		 	두 명의 직원에 대해 출력하세요.
 		 
 		 */
-		Scanner scan = new Scanner(System.in);
-//		int name, 소속부서명, 월급여액;
-		// String word = "직원이름";	// String은 클래스이다.
-		// 클래스 - 사용자 정의 타입
+		Scanner sc = new Scanner(System.in);
+		
+		String name, dept;
+		int money;
+		float tax = 0.08f;
 		
 		System.out.print("이름 : ");
-		String 직원이름 = "";
-		System.out.print("부서명 : ");
-		String 소속부서명 = "";
-		System.out.print("월급 : ");
-		String 월급여액 = "";
+		name = sc.nextLine();
+		System.out.print("부서 : ");
+		dept = sc.nextLine();
+		
+		System.out.print("월 급여 : ");
+		money = sc.nextInt();
+		
+		float salary = (int)(money - (money*tax));
+		
+		System.out.println("이름 : " + name + " 부서 : " + dept + " 수령액 : " + salary);
 
 	}
 
