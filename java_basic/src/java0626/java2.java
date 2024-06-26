@@ -27,11 +27,11 @@ public class java2 {
 		// 클래스 - 사용자 정의 타입
 		
 		System.out.print("이름 : ");
-		String 직원이름 = scna.;
+		String 직원이름 = "";
 		System.out.print("부서명 : ");
-		String 소속부서명 = "소속부서명";
+		String 소속부서명 = "";
 		System.out.print("월급 : ");
-		String 월급여액 = "월급여액";
+		String 월급여액 = "";
 
 	}
 
