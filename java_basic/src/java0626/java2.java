@@ -23,8 +23,8 @@ public class java2 {
 		 */
 		Scanner sca = new Scanner(System.in);
 		
-		String name, dept;
-		int money;
+		String name, dept, name2, dept2;
+		int money, money2;
 		float tax = 0.08f;
 		
 		System.out.print("이름 : ");
@@ -33,12 +33,33 @@ public class java2 {
 		dept = sca.nextLine();
 		
 		System.out.print("월 급여 : ");
-		money = sca.nextInt();
-		
+		money = sca.nextInt();		
 		float salary = (int)(money - (money*tax));
-		
-		System.out.println("이름 : " + name + " 부서 : " + dept + " 수령액 : " + salary);
 
+		System.out.println("이름 : " + name + " 부서 : " + dept + " 수령액 : " + salary );
+		
+		sca.nextLine();
+
+		
+		System.out.print("이름 : ");
+		name2 = sca.nextLine();
+		System.out.print("부서 : ");
+		dept2 = sca.nextLine();
+		
+		System.out.print("월 급여 : ");
+		money2 = sca.nextInt();
+		
+		float salary2 = (int)(money2 - (money2*tax));
+		
+		System.out.println("이름 : " + name2 + " 부서 : " + dept2 + " 수령액 : " + salary2);
+		
+		
+		/*
+		  next() - 스페이스키, 탭키, 엔터키를 누르면 입력 끝
+		  nextLine() - 엔터키 누르면 입력 끝
+		  
+		  
+		 */
 	}
 
 }
