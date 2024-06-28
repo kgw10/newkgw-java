@@ -59,8 +59,22 @@ public class java1 {
 		}
 		int[] 일학년 = new int[A반.length + B반.length];
 		
-		System.arraycopy();	// 배열 복사
 		
+		
+		// 복사할 배열, 복사 시작 인덱스, 저장할 배열, 저장 위치 인덱스
+		System.arraycopy(A반, 0, 일학년,0, A반.length);	// 배열 복사
+		System.arraycopy(B반, 0, 일학년,3, B반.length);	// 배열 복사
+		
+		for(int i = 0; i < 일학년.length; i++) {
+			if(일학년[i] >= 80)
+				System.out.println(일학년[i]);
+		}
+		
+		Array.sort(일학년);
+		System.out.println(Arrays.toString(일학년));
+		
+		boolean same = Arrays.equals(A반, B반);
+		System.out.println("A반, B반 배열이 같은가? " + same);
 		
 		
 		
