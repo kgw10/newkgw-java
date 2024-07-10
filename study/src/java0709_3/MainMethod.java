@@ -1,4 +1,4 @@
-package t0709_3;
+package java0709_3;
 
 public class MainMethod {
 

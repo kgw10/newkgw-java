@@ -1,4 +1,4 @@
-package t0709_3;
+package java0709_3;
 
 interface RestCustomer{	// 식당에 찾아오는 손님
 	
