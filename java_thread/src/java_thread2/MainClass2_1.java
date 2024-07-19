@@ -1,4 +1,4 @@
-package java0718_2;
+package java_thread2;
 
 public class MainClass2_1 {
 

@@ -1,4 +1,4 @@
-package java0718_3;
+package java_thread3;
 
 public class Sync {
 

@@ -1,4 +1,4 @@
-package java0718_1;
+package java_thread1;
 
 public class MeThread extends Thread{
 	public static int num = 10;	// 클래스 변수

@@ -1,4 +1,4 @@
-package java0718_1;
+package java_thread1;
 
 import java.util.Scanner;
 
