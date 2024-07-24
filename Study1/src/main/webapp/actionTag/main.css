@@ -2,17 +2,15 @@
 /* main.css */
 
 *{
-	padding: 0;
+	padding:0;
 	margin:0;
-	box-sizing : border-box;
-	
+	box-sizing:border-box;
 }
 #header{
-	width: 1000px;
-	padding: 10px 0;
-	margin: 0 auto;
+	width:1000px;
+	padding:10px 0;
+	margin:0 auto;
 }
-
 #menuList{
 	display:flex;
 	list-style:none;
@@ -28,36 +26,33 @@
 .menu:hover{
 	color:orange;
 }
-
 .active{
 	background:#ddd;
 }
 
 #main{
 	width:1000px;
-	margin: 0 auto;
+	margin:20px auto;
 }
-
 #imgBoard{
-	display:flxed;
+	display:flex;
 	flex-wrap:wrap;
 	gap:10px;
 }
 #footer{
-	width:100px;
-	margin: 0 auto;
+	width:1000px; 
+	margin:0 auto;
 }
-#loginBox {
-	position : flex;
-	left: 20px;
-	top: 200px;
-	padding: 10px 20px;
+#loginBox{
+	position:fixed;
+	left:20px;
+	top:200px;
+	padding:10px 20px;
 	border-radius:10px;
 	background:#047cff;
-	
 }
 #loginBox a{
-	text-decoration: none;
+	text-decoration:none;
 	color:white;
 	font-size:20px;
 	font-weight:800;
