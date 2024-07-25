@@ -1,24 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
-
+    
 <%
 	String part = request.getParameter("part");
 
-	if(part == null) part="main";
+	if( part == null) part="main";
 
-%>
-
+%>    
+    
+    
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-
-
+	<!-- jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>  
 <link rel="stylesheet" href="default.css">
 
-<link rel="stylesheet" href="<%=part %>.css">
+<link rel="stylesheet" href="<%=part %>.css"> 
+
 </head>
 <body>
 
@@ -26,11 +27,11 @@
 		<jsp:include page="header.jsp" />
 		
 		<div id="main">
-			<% String subpage = part+".jsp"; %>
-			<jsp:include page="<%=subpage %>" />
+			<% String subPage = part+".jsp"; %>
+			<jsp:include page="<%=subPage%>" />
 		</div>
 		
-		<jsp:include page="footer.jsp" />	
+		<jsp:include page="footer.jsp" />		
 		
 	</div>
 

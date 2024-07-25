@@ -1,13 +1,12 @@
 @charset "UTF-8";
 
-@charset "UTF-8";
-
 #mainBox{
 	width:100%;
 	position:relative;
 }
 #slider{
 	background:url('https://picsum.photos/1000/300');
+	background-size:cover;
 	height:300px;
 }
 #recently{
