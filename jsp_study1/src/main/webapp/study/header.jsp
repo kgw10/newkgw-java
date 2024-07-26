@@ -2,7 +2,7 @@
     pageEncoding="UTF-8" import="study.Member" %>
 
 <%
-	String path="http://localhost:8080/Study1/study/";
+	String path="http://localhost:8080/jsp_study1/study/";
 %>
     
 <div id="header">

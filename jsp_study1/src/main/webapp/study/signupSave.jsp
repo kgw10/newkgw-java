@@ -67,7 +67,7 @@
  	
  	// 테이블에 저장 성공시 로그인 페이지 로 이동
  	if(isSuccess){
- 		response.sendRedirect("/Study1/study/?part=signin");
+ 		response.sendRedirect("/jsp_study1/study/?part=signin");
  	}
  	
  %>
