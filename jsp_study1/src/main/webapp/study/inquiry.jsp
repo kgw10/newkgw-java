@@ -24,7 +24,7 @@
 				for( int i=0; i<0; i++){
 			%>
 			<li class='list'>
-				<span class="title"></span>
+				<span class="title"><i class="bi bi-lock"></i></span>
 				<span class="writer"></span>
 				<span class="isAnswer"></span>
 			</li>

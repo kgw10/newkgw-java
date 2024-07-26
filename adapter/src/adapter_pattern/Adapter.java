@@ -8,7 +8,7 @@ public class Adapter implements Target {
 	}
 	
 	@Override
-	public void tarada() {
+	public void targetadapter() {
 		adaptee.adapte();
 		
 	}

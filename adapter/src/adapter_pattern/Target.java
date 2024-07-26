@@ -1,6 +1,6 @@
 package adapter_pattern;
 
 public interface Target {
-	void tarada();
+	void targetadapter();
 
 }
