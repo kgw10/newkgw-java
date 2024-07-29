@@ -16,13 +16,35 @@
 					<th class="hit">조회수</th>
 				</tr>
 				<%
-					for(int i=0; i<=0; i++){
+				DBconnect db = new DBconnect();
+				
+				String sql = "select * from board order by board_id desc";
+				
+				ArrayList<Board> list = new ArrayList<>();
+				
+				
+				try{
+					
+					db.pt = db.conn.prepareStatement(sql);
+					db.rs = db.pt.executeQuery();
+					while(db.rs.next()){
+						list.add(new Board(db.rs.getInt("board_id"), db.rs.getString("writer"), 
+							db.rs.getString("title"), db.rs.getString("content"), db.rs.getInt("hit")) );
+						
+					}
+					
+				}catch(Exception e){
+					e.printStackTrace();
+					System.out.println("board 테이블 조회 실패");
+				}
+				
+					for( Board row : list ){
 				%>
 				<tr>
-					<td class="num"></td>
-					<td class="title"></td>
-					<td class="writer"></td>
-					<td class="hit"></td>
+					<td class="num"><%=row.getBoard_id() %></td>
+					<td class="title"><%=row.getTitle() %></td>
+					<td class="writer"><%=row.getWriter() %></td>
+					<td class="hit"><%=row.getHit() %></td>
 				</tr>
 				<% } %>
 				

@@ -10,8 +10,8 @@
 		</div>
 		<div class="writeInput">
 			<label>이미지</label>
-			<input type="file" name="boardImg" id="boardImg" accept=".jpg, .png, .jpeg, .gif">
-							<!-- accept="image/*" accept="video/*" -->
+			<input type="file" name="boardImg" id="boardImg" accept=".jpg, .png, .jpeg , .gif"> 
+			             <!-- accept="image/*"   accept="video/*" -->    
 		</div>
 		<div class="writeInput">
 			<label>내용</label>

@@ -1,7 +1,7 @@
 package study;
 
 public class Member {
-	private String userId;	// Å×ÀÌºíÄÃ·³¸í ±ÔÄ¢ - user_id
+	private String userId; // Ã…Ã—Ã€ÃŒÂºÃ­Ã„ÃƒÂ·Â³Â¸Ã­ Â±Ã”Ã„Â¢ - user_id
 	private String userPassword;
 	private String userEmail;
 	private String userName;
@@ -9,11 +9,12 @@ public class Member {
 	
 
 	public Member() {}
-	public Member(String userId, String userPassword, String userEmail, String userName, int level) {
-		this.userId = userId;
-		this.userPassword = userPassword;
-		this.userEmail = userEmail;
-		this.userName = userName;
+	public Member(String userId, String userPassword,
+			String userEmail, String userName ,int level) {
+		this.userId=userId;
+		this.userPassword=userPassword;
+		this.userEmail=userEmail;
+		this.userName=userName;
 		this.level=level;
 	}
 	public int getLevel() {
@@ -46,5 +47,6 @@ public class Member {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-
+	
+	
 }

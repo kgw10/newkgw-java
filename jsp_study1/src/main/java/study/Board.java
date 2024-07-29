@@ -7,19 +7,15 @@ public class Board {
 	private String content;
 	private int hit;
 	
-	
-	public Board() {
-		
-	}
-	
-	public Board(int board_id, String writer, String title, String content, int hit) {
-		this.board_id = board_id;
-		this.writer = writer;
-		this.title = title;
-		this.content = content;
+	public Board() {	}
+	public Board(int board_id, String writer, String title, 
+			String content, int hit) {
+		this.board_id=board_id;
+		this.writer=writer;
+		this.title=title;
+		this.content=content;
 		this.hit=hit;
 	}
-	
 	
 	
 	public int getBoard_id() {
@@ -52,5 +48,6 @@ public class Board {
 	public void setHit(int hit) {
 		this.hit = hit;
 	}
-
+	
+	
 }

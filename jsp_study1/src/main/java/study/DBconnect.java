@@ -20,10 +20,10 @@ public class DBconnect {
 	 		System.out.println(" 드라이버 로드 실패 ");
 	 	}
 	 	// 계정 접속
-	 	String user= "kgw";
+	 	String user= "melon";
 	 	String password="1234";
-	 	String url = "jdbc:mysql://localhost:3306/kgw";
-
+	 	String url = "jdbc:mysql://localhost:3306/melon";
+	
 	 	try{
 	 		conn = DriverManager.getConnection(url, user, password);
 	 	}catch(SQLException e){

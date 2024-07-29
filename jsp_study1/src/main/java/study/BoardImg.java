@@ -1,21 +1,20 @@
 package study;
 
 public class BoardImg {
+	private int boardImgId; //  번호
+	private int boardId; //게시글 번호
+	private String imgName; //이미지이름
+	private String imgPath; //이미지저장경로
 	
-	private int boardImgId;	// 번호
-	private int boardId; // 게시글 번호
-	private String imgName;	// 이미지 이름
-	private String imgPath;	// 이미지 저장 경로
+	public BoardImg() {}
+	public BoardImg(int boardImgId, int boardId,
+			String imgName, String imgPath) {
+		this.boardImgId=boardImgId;
+		this.boardId=boardId;
+		this.imgName=imgName;
+		this.imgPath=imgPath;
+	}
 	
-	public BoardImg() {
-		
-	}
-	public BoardImg(int boardImgId, int boardId, String imgName, String imgPath) {
-		this.boardImgId = boardImgId;
-		this.boardId = boardId;
-		this.imgName = imgName;
-		this.imgPath = imgPath;
-	}
 	
 	public int getBoardImgId() {
 		return boardImgId;
@@ -41,6 +40,7 @@ public class BoardImg {
 	public void setImgPath(String imgPath) {
 		this.imgPath = imgPath;
 	}
+	
 	
 	
 }
