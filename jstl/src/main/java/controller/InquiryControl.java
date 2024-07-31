@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class TestServlet1
+ * Servlet implementation class InquiryControl
  */
-@WebServlet("/test1")
-public class TestServlet1 extends HttpServlet {
+@WebServlet("/inquiry")
+public class InquiryControl extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public TestServlet1() {
+    public InquiryControl() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,21 +28,18 @@ public class TestServlet1 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		// response.getWriter().append("MY servlet doGet method").append(request.getContextPath());
-		// response.sendRedirect("/"); 사용자 요청 주소를 변경하여 페이지 처리
-		
-		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
-		rd.forward(request, response);
-		
+		RequestDispatcher rsd = request.getRequestDispatcher("inquiry.jsp");
+		rsd.forward(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+
+		RequestDispatcher rs = request.getRequestDispatcher("inquiry.jsp");
+		rs.forward(request, response);
+	
 	}
 
 }
