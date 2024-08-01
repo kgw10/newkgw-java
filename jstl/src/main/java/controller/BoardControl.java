@@ -28,19 +28,22 @@ public class BoardControl extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-		RequestDispatcher bovi = request.getRequestDispatcher("boardView.jsp");
-		bovi.forward(request, response);
+		// 게시글 제목 클릭하면 요청방식이 get이기때문에
+		// doGet 메서드가 호출된다.
 		
+		RequestDispatcher rd = request.getRequestDispatcher("boardView.jsp");
+		rd.forward(request, response);
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// 글작성 버튼을 클릭하면 클라이언트의 요청 방식이 post이기 때문에 doPost메서드가 호출된다.		
-		RequestDispatcher bowr = request.getRequestDispatcher("boardWrite.jsp");
-		bowr.forward(request, response);
+		// 글작성 클릭하면 클라이언트의 요청방식이 post 이기때문에
+		// doPost 메서드가 호출된다.
+		
+		RequestDispatcher rd = request.getRequestDispatcher("boardWrite.jsp");
+		rd.forward(request, response);
 	}
 
 }

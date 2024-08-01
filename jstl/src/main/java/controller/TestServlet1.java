@@ -29,12 +29,11 @@ public class TestServlet1 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		// response.getWriter().append("MY servlet doGet method").append(request.getContextPath());
-		// response.sendRedirect("/"); 사용자 요청 주소를 변경하여 페이지 처리
+		// response.getWriter().append("").append(request.getContextPath());
+		// response.sendRedirect("/"); 사용자요청 주소를변경하여 페이지처리
 		
-		RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher( "index.jsp"  );
 		rd.forward(request, response);
-		
 	}
 
 	/**

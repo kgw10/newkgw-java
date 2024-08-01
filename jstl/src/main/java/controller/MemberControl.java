@@ -36,14 +36,15 @@ public class MemberControl extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// RequestDispatcher reds = request.getRequestDispatcher(사용자에게 봉줄 페이지 경로);
+// RequestDispatcher rds = request.getRequestDispatcher(사용자에게 보여줄페이지경로);		
 		
-		String detail="신규 회원 가입 10명 남았습니다.";
+		String detail="신규회원 가입 10명 남았습니다.";
 		
-		
-//		response.sendRedirect("/signin.jsp"); 
-		// 서블릿 클래스에 의해 생성된 데이터를 사용자가 보는 페이지에 출력하려면 forward를 사용해야 한다.
-		// 사용자가 보는 페이지에 html 내용만 필요하거나 보여줄 데이터가 없는 경우 sendRedirect를 사용한다.
+//		response.sendRedirect("/signin.jsp");
+// 서블릿 클래스에 의해 생성된 데이터를  사용자가 보는 페이지에
+// 출력하려면  forward를 사용해야한다.
+// 사용자가 보는 페이지에 html내용만 필요하거나 보여줄 데이터가 없는경우
+//  sendRedirect를 사용한다.
 		
 		request.setAttribute("message", detail);
 		
@@ -58,18 +59,21 @@ public class MemberControl extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		// 입력한 아이디와 비밀번호 가져오기
-		String id = request.getParameter("id");
+		String id= request.getParameter("id");
 		String pw = request.getParameter("pw");
 		if( id.equals("gold") && pw.equals("1234") ) {
-			// 아이디 gold, 비밀번호 1234 입력한 경우에 로그인 성공
+			// 아이디 gold, 비밀번호 1234 입력한경우에 로그인 성공
 			
 			response.sendRedirect("/");
-		} else {
+		}else {
 			// 로그인 실패한 경우
+			
 			request.setAttribute("fail", "아이디 또는 비밀번호가 잘못되었습니다.");
+			
 			RequestDispatcher rsd = request.getRequestDispatcher("main.jsp");
 			rsd.forward(request, response);
 		}
+		
 		
 	}
 
