@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h2>로그인 화면 </h2>
+<h2>로그입 화면 </h2>
 <div id="signinBox">
 	<form id="signFm" method="post" action="/signInCheck.do">
 		<input type="hidden" name="preURL" id="preURL">
@@ -34,7 +34,6 @@
 </body>
 </html>
 <script>
-	doucument.getElementById("preURL").value=document.referrer;
-
+	document.getElementById("preURL").value=document.referrer;
 
 </script>
